@@ -1,0 +1,17 @@
+Description: Remove rubygems and bundler requires
+ Tests use rubygems and bundler for dependencies.
+ .
+ We make sure dependencies are already added in
+ build-depends.
+Author: Praveen Arimbrathodiyil <praveen@debian.org>
+Last-Update: 2013-05-09
+
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -1,2 +1,4 @@
+-require 'rubygems'
+-require 'bundler/setup'
++# We'll add dependencies in debian/control
++# We don't need rubygems or bundler
++# require 'rubygems'
++# require 'bundler/setup'

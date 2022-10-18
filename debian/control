@@ -1,0 +1,32 @@
+Source: ruby-appraisal
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Praveen Arimbrathodiyil <praveen@debian.org>
+Build-Depends: bundler,
+               debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-aruba,
+               ruby-rspec
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-appraisal.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-appraisal.git
+Homepage: http://github.com/thoughtbot/appraisal
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-appraisal
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: bundler,
+         rake,
+         ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Find out what your Ruby gems are worth
+ Appraisal integrates with bundler and rake to test your library against
+ different versions of dependencies in repeatable scenarios called "appraisals."
+ .
+ Appraisal is designed to make it easy to check for regressions in your library
+ without interfering with day-to-day development using bundler.

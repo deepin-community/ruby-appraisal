@@ -1,0 +1,25 @@
+ruby-appraisal (0.5.1-2) unstable; urgency=medium
+
+  [ Sebastien Badia ]
+  * Team upload
+  * d/compat: Bump compat version to 9 and wrap file
+  * d/control: Update Vcs-* fields (use cgit and https)
+  * Bump Standards-Versions to 3.9.7 (no changes)
+  * Update debian packaging
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+
+  [ Andrew Lee (李健秋) ]
+  * New upload to support current Ruby version. (Closes: #830060)
+  * Bump standard version to 3.9.8.
+
+ -- Andrew Lee (李健秋) <andrew.lee@collabora.co.uk>  Fri, 26 Aug 2016 15:35:13 +0800
+
+ruby-appraisal (0.5.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #702343)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Tue, 05 Mar 2013 18:29:18 +0530
